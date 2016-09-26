@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "HBS-SETUP", "HBS-SETUP.vdproj", "{1D8879EB-A4AE-41B9-A7F3-C3A1A833B47D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D8879EB-A4AE-41B9-A7F3-C3A1A833B47D}.Debug|Default.ActiveCfg = Debug
+		{1D8879EB-A4AE-41B9-A7F3-C3A1A833B47D}.Debug|Default.Build.0 = Debug
+		{1D8879EB-A4AE-41B9-A7F3-C3A1A833B47D}.Release|Default.ActiveCfg = Release
+		{1D8879EB-A4AE-41B9-A7F3-C3A1A833B47D}.Release|Default.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

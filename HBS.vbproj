@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{30A75CB7-6DA6-487D-8DB1-88847553F84F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>HBS.My.MyApplication</StartupObject>
+    <RootNamespace>HBS</RootNamespace>
+    <AssemblyName>HBS</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ApplicationIcon>SecStoreFile.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>HBS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>HBS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.Office.Interop.Word, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="RTBExVB, Version=1.0.3822.671, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\RTBExVB.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FORMS\AboutUs.Designer.vb">
+      <DependentUpon>AboutUs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\AboutUs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\AdminView.Designer.vb">
+      <DependentUpon>AdminView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\AdminView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\BillingHelp.Designer.vb">
+      <DependentUpon>BillingHelp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\BillingHelp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\Collections.Designer.vb">
+      <DependentUpon>Collections.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\Collections.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\RadiologicalHelp.Designer.vb">
+      <DependentUpon>RadiologicalHelp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\RadiologicalHelp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\RadiologyReport.Designer.vb">
+      <DependentUpon>RadiologyReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\RadiologyReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\DateWisePatientReceipt.Designer.vb">
+      <DependentUpon>DateWisePatientReceipt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\DateWisePatientReceipt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\CurrentUserCollections.Designer.vb">
+      <DependentUpon>CurrentUserCollections.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\CurrentUserCollections.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\DefaultReport.Designer.vb">
+      <DependentUpon>DefaultReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\DefaultReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\OtherPasswords.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\Department.designer.vb">
+      <DependentUpon>Department.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\Department.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\Help.Designer.vb">
+      <DependentUpon>Help.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\Help.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\Password.Designer.vb">
+      <DependentUpon>Password.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\Password.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\PatinetBilling.Designer.vb">
+      <DependentUpon>PatinetBilling.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\PatinetBilling.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\Registration.designer.vb">
+      <DependentUpon>Registration.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\Registration.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\ReportViewer.Designer.vb">
+      <DependentUpon>ReportViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\ReportViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\Services.designer.vb">
+      <DependentUpon>Services.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\Services.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\SubDepartments.designer.vb">
+      <DependentUpon>SubDepartments.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\SubDepartments.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\UserAccount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\HBSMAIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\HBSMAIN.Designer.vb">
+      <DependentUpon>HBSMAIN.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULES\BILLING.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RichTextBoxEx.vb">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FORMS\AboutUs.resx">
+      <DependentUpon>AboutUs.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\AdminView.resx">
+      <DependentUpon>AdminView.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\BillingHelp.resx">
+      <DependentUpon>BillingHelp.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\Collections.resx">
+      <DependentUpon>Collections.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\RadiologicalHelp.resx">
+      <DependentUpon>RadiologicalHelp.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\RadiologyReport.resx">
+      <DependentUpon>RadiologyReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\DateWisePatientReceipt.resx">
+      <DependentUpon>DateWisePatientReceipt.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\CurrentUserCollections.resx">
+      <DependentUpon>CurrentUserCollections.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\DefaultReport.resx">
+      <DependentUpon>DefaultReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\OtherPasswords.resx">
+      <DependentUpon>OtherPasswords.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\Department.resx">
+      <DependentUpon>Department.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\Help.resx">
+      <DependentUpon>Help.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\Password.resx">
+      <DependentUpon>Password.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\PatinetBilling.resx">
+      <DependentUpon>PatinetBilling.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\Registration.resx">
+      <DependentUpon>Registration.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\ReportViewer.resx">
+      <DependentUpon>ReportViewer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\Services.resx">
+      <DependentUpon>Services.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\SubDepartments.resx">
+      <DependentUpon>SubDepartments.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\UserAccount.resx">
+      <DependentUpon>UserAccount.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\HBSMAIN.resx">
+      <DependentUpon>HBSMAIN.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images4.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fR-X-Ray_02.jpg" />
+    <None Include="Resources\usg.jpg" />
+    <None Include="Resources\usg1.jpg" />
+    <None Include="Resources\plain_background.jpg" />
+    <None Include="Resources\fretwork_mirror1765_400.jpg" />
+    <Content Include="SecStoreFile.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxFPSpread">
+      <Guid>{FDAC2480-F4ED-4632-AA78-DCA210A74E49}</Guid>
+      <VersionMajor>6</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxFPSpreadADO">
+      <Guid>{F856EC8B-F03C-4515-BDC6-64CBD617566A}</Guid>
+      <VersionMajor>6</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="FPSpread">
+      <Guid>{FDAC2480-F4ED-4632-AA78-DCA210A74E49}</Guid>
+      <VersionMajor>6</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="FPSpreadADO">
+      <Guid>{F856EC8B-F03C-4515-BDC6-64CBD617566A}</Guid>
+      <VersionMajor>6</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="MSDATASRC">
+      <Guid>{7C0FFAB0-CD84-11D0-949A-00A0C91110ED}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
